@@ -54,8 +54,8 @@ function createEventStream(heartbeat) {
       res.writeHead(200, {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'text/event-stream;charset=utf-8',
-        'Cache-Control': 'no-cache, no-transform',
-        'Connection': 'keep-alive'
+        'Cache-Control': 'no-cache, no-transform'
+        // 'Connection': 'keep-alive'
       });
       res.write('\n');
       var id = clientId++;
